@@ -7,7 +7,8 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 
-model = tf.keras.models.load_model("model.keras")
+import keras
+model = keras.models.load_model("model.h5", compile=False)
 classes = [
 "Pepper__bell___Bacterial_spot",
 "Pepper__bell___healthy"
