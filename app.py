@@ -6,7 +6,9 @@ from PIL import Image
 
 # Load model
 model_path = os.path.join(os.path.dirname(__file__), "model.h5")
-model = tf.keras.models.load_model(model_path, compile=False)
+import tensorflow as tf
+
+model = tf.keras.models.load_model("model.h5", compile=False)
 
 # Classes (ONLY 2)
 classes = [
