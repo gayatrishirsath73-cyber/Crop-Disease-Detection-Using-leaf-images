@@ -62,6 +62,6 @@ validation_data=val_ds,
 epochs=10
 )
 
-model.save("model.h5")
+model.save("model.keras")
 
 print("Model Saved Successfully")
