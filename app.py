@@ -1,5 +1,6 @@
 import os
-os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
+model_path = os.path.join(os.path.dirname(__file__), "model.h5")
+model = tf.keras.models.load_model(model_path, compile=False)
 
 import streamlit as st
 import tensorflow as tf
