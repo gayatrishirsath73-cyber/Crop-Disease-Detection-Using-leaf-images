@@ -1,9 +1,10 @@
+import os
 import streamlit as st
 import tensorflow as tf
 import numpy as np
 from PIL import Image
 
-model_path = "model.h5"
+model_path = os.path.join(os.path.dirname(__file__), "model.h5")
 model = tf.keras.models.load_model(model_path, compile=False)
 
 classes = [
